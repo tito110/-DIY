@@ -93,6 +93,47 @@ npm run preview
 - 間違えた問題を自動的に記録
 - 全問終了後、間違えた問題のみを復習可能
 
+## 📱 スマートフォンからアクセスする方法（Vercelデプロイ）
+
+このアプリをスマートフォンからアクセスできるようにデプロイする手順です。
+
+### ステップ1: Vercelアカウントの作成
+
+1. スマートフォンのブラウザで [vercel.com](https://vercel.com) にアクセス
+2. 「Sign Up」をタップ
+3. 「Continue with GitHub」を選択してGitHubアカウントで登録
+
+### ステップ2: プロジェクトをデプロイ
+
+1. Vercelのダッシュボードで「Add New...」→「Project」をタップ
+2. 「Import Git Repository」から `-DIY` リポジトリを選択
+3. ブランチを `claude/psychology-quiz-app-011CUuEABjaWopP3eGpnBdBD` に設定
+4. 「Deploy」をタップ
+
+### ステップ3: プライバシー設定（オプション）
+
+デプロイ後、プライベートにしたい場合：
+
+1. プロジェクトの「Settings」→「Deployment Protection」に移動
+2. 以下のいずれかを選択：
+   - **Password Protection**: パスワードで保護
+   - **Vercel Authentication**: Vercelアカウントでログインが必要
+
+### デプロイ完了！
+
+デプロイが完了すると、以下のようなURLが発行されます：
+```
+https://your-app-name.vercel.app
+```
+
+このURLをスマートフォンのブラウザで開けば、どこからでもアクセスできます！
+
+### 自動更新
+
+GitHubにプッシュすると、Vercelが自動的に再デプロイしてくれます。
+
+---
+
 ## 将来の拡張予定
 
 - 他の科目の追加（発達心理学概論など）
